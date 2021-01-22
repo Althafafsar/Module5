@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration page</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="Css/bootstrap.min.css" rel="stylesheet">
+  	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<header>
+	<div class="navbar navbar-default" id="header">
+			Student-Registration-Form
+	</div>
+</header>
+<hr color ="orange"> 
+<div class="container" id="box">
+	<form action="index.html" class="justify-content-center">
+		<div class="form-group">
+			<span class="required">*</span>
+			<label>First Name:</label> 
+			<input type="text" placeholder="Enter Firstname" required>
+		</div>
+		<div class="form-group">
+			<span class="required">*</span>
+			<label>Last Name:</label>
+			<input type="text" placeholder="Enter Lastname" required>
+		</div>
+		<div class="form-group">
+			<span class="required">*</span>
+			<label>Date Of Birth:</label>
+			<input type="Date" required>
+		</div>
+		<div class="form-group">
+			<span class="required">*</span>
+			<label>Gender:</label>
+			<select name="Gender"required>
+				<option>Male</option>
+				<option>Female</option>
+				<option>Prefer not to say</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<span class="required">*</span>
+			<label>Email id:</label>
+			<input type="Email" id="validate-id" maxlength="25" placeholder="Enter Email" required>
+			<div>
+				<small>We'll never share your email with anyone else.</small>
+			</div>
+		</div>
+		<div class="form-group">
+			<span class="required">*</span>
+			<label>Password:</label></td>
+			<input type="Password" id = "validate-password"minlength="8" placeholder="Enter Password" required>
+			<div>
+				<small>Minimum 8 characters</small>
+			</div>
+		</div>
+		<div class="form-group">
+			<span class="required">*</span>
+			<label>Confirm Password:</label>
+			<input type="Password" minlength="8" placeholder="Enter Password" required>
+			<div>
+				<small>Minimum 8 characters</small>
+			</div>
+		</div>
+		<div class="form-group">
+			<span class="required">*</span>
+			<label>Place:</label>
+			<select name="Place" required>
+				<option>Chennai</option>
+				<option>Mumbai</option>
+				<option>Bangalore</option>
+				<option>Trichy</option>
+				<option>Kanyakumari</option>
+			</select>
+		</div>
+		<button type="submit" class="btn btn-default" id="submit">Register</button>
+	</form>
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
